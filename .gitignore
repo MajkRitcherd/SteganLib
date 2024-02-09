@@ -1,0 +1,9 @@
+# SteganLib files
+SteganLib/.vs
+SteganLib/SteganLib/bin
+SteganLib/SteganLib/obj
+
+# SteganLib.Console files
+SteganLib.Console/.vs
+SteganLib.Console/SteganLib.Console/bin
+SteganLib.Console/SteganLib.Console/obj
