@@ -1,7 +1,7 @@
 ﻿/**********************************************
- * 
+ *
  *          Created by Majk Ritcherd
- * 
+ *
  *********************************************/
 
 namespace SteganLib.Console
@@ -17,22 +17,6 @@ namespace SteganLib.Console
         public static class ParserOptions
         {
             /// <summary>
-            /// Constants related to the possible operations.
-            /// </summary>
-            public static class Operations
-            {
-                /// <summary>
-                /// Encode operation.
-                /// </summary>
-                public const string Encode = "enSteg";
-
-                /// <summary>
-                /// Decode operation.
-                /// </summary>
-                public const string Decode = "decSteg";
-            }
-
-            /// <summary>
             /// Constants related to the possible argument keys.
             /// </summary>
             public static class ArgumentKeys
@@ -43,9 +27,9 @@ namespace SteganLib.Console
                 public const string Help = "--help";
 
                 /// <summary>
-                /// Safe mode key.
+                /// Image key.
                 /// </summary>
-                public const string SafeMode = "--safe";
+                public const string Image = "--image";
 
                 /// <summary>
                 /// Message key.
@@ -53,16 +37,36 @@ namespace SteganLib.Console
                 public const string Message = "--message";
 
                 /// <summary>
-                /// Image key.
+                /// Operation key.
                 /// </summary>
-                public const string Image = "--image";
+                public const string Operation = "--operation";
 
                 /// <summary>
                 /// Password key.
                 /// </summary>
                 public const string Password = "--password";
+
+                /// <summary>
+                /// Safe mode key.
+                /// </summary>
+                public const string SafeMode = "--safe";
+            }
+
+            /// <summary>
+            /// Constants related to the possible operations.
+            /// </summary>
+            public static class Operations
+            {
+                /// <summary>
+                /// Decode operation.
+                /// </summary>
+                public const string Decode = "decSteg";
+
+                /// <summary>
+                /// Encode operation.
+                /// </summary>
+                public const string Encode = "enSteg";
             }
         }
-
     }
 }
