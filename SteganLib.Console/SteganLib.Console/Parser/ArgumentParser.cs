@@ -28,7 +28,7 @@ namespace SteganLib.Console.Parser
         /// <summary>
         /// Gets or sets arguments.
         /// </summary>
-        public Dictionary<string, string> Arguments { get; set; } = [];
+        public ArgumentDictionary Arguments { get; set; } = [];
 
         /// <summary>
         /// Writes help to the command line.
