@@ -4,7 +4,7 @@
  *
  *********************************************/
 
-namespace SteganLib.Steganography
+namespace SteganLib.Utils.Steganography
 {
     /// <summary>
     /// Abstract implementation of steganography encode/decode methods.

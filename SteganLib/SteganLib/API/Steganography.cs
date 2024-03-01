@@ -4,9 +4,9 @@
  *
  *********************************************/
 
-using SteganLib.Steganography;
+using SteganLib.Utils.Steganography;
 
-namespace SteganLib.SteganCoder
+namespace SteganLib.API
 {
     /// <summary>
     /// Performs encoding/decoding message into the image using password.
@@ -46,7 +46,7 @@ namespace SteganLib.SteganCoder
         /// <exception cref="Exception">Thrown</exception>
         private static void Code<T>(T instance, SteganMode steganMode, string pathToImage, string? message = null, string? password = null) where T : AbstractSteganMethods
         {
-            if (typeof(T) != typeof(EncodeMethods) || typeof(T) != typeof(DecodeMethods) || instance == null)
+            if (typeof(T) != typeof(EncodeMethods) && typeof(T) != typeof(DecodeMethods) || instance == null)
                 throw new Exception($"Passed instance '{instance}' is not either EncodeMethods or DecodeMethods!");
 
             switch (steganMode)

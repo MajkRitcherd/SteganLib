@@ -4,7 +4,7 @@
  *
  *********************************************/
 
-namespace SteganLib.SteganCoder
+namespace SteganLib.API
 {
     /// <summary>
     /// All possible modes of encoding/decoding.

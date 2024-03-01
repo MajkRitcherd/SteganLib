@@ -4,7 +4,7 @@
  *
  *********************************************/
 
-namespace SteganLib.Steganography
+namespace SteganLib.Utils.Steganography
 {
     /// <summary>
     /// Singleton containing steganography decode methods.
@@ -21,30 +21,40 @@ namespace SteganLib.Steganography
         /// <inheritdoc/>
         internal override void LHB(string pathToImage, string? message, string? password)
         {
+            var imageStream = Helpers.CheckedOpenFile(pathToImage, FileMode.Open, FileAccess.Read);
+
             throw new NotImplementedException();
         }
 
         /// <inheritdoc/>
         internal override void LSB(string pathToImage, string? message, string? password)
         {
+            var imageStream = Helpers.CheckedOpenFile(pathToImage, FileMode.Open, FileAccess.Read);
+
             throw new NotImplementedException();
         }
 
         /// <inheritdoc/>
         internal override void MSB(string pathToImage, string? message, string? password)
         {
+            var imageStream = Helpers.CheckedOpenFile(pathToImage, FileMode.Open, FileAccess.Read);
+
             throw new NotImplementedException();
         }
 
         /// <inheritdoc/>
         internal override void Password(string pathToImage, string? message, string? password)
         {
+            var imageStream = Helpers.CheckedOpenFile(pathToImage, FileMode.Open, FileAccess.Read);
+
             throw new NotImplementedException();
         }
 
         /// <inheritdoc/>
         internal override void UHB(string pathToImage, string? message, string? password)
         {
+            var imageStream = Helpers.CheckedOpenFile(pathToImage, FileMode.Open, FileAccess.Read);
+
             throw new NotImplementedException();
         }
     }
